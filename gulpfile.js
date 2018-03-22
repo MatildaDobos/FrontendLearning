@@ -9,7 +9,7 @@ gulp.task('clean', function() {
 })
 
 gulp.task('sass', ['clean'], function(){
-  return gulp.src('./app/sass/**/*.scss')
+  return gulp.src('./app/sass/style.scss')
     .pipe(sass())
     .pipe(gulp.dest('./app/css/'))
     .pipe(browserSync.reload({
